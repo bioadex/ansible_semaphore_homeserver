@@ -1,6 +1,6 @@
 ---
-- hosts: my_servers
+- hosts: all
   become: true
   tasks:
-    - name: reboot_raspberrypi
+    - name: Print OS info
     
