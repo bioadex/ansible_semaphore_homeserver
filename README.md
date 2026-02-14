@@ -1,6 +1,7 @@
 # ansible_semaphore_homeserver
 jenkins-ansible-semaphore-cicd
 
+```text
 jenkins-ansible-semaphore-cicd/
 │
 ├── Jenkinsfile
@@ -13,6 +14,7 @@ jenkins-ansible-semaphore-cicd/
 │   └── semaphore-run.png
 └── ansible/
     └── playbooks/
+```
 
 
 # Jenkins -> Semaphore CI/CD Integration (HomeServer)
