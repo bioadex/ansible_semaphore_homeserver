@@ -45,6 +45,7 @@ Body:
 2. Deployment Trigger Stage
 
 ## Successful Deployment Response 
+<img width="1895" height="649" alt="image" src="https://github.com/user-attachments/assets/543aeb3d-00e3-4877-a923-beabe72202be" />
 
 HTTP 201 Created 
 
