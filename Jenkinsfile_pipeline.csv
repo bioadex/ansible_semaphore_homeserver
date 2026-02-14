@@ -1,0 +1,61 @@
+pipeline {
+  agent { label "nodejs-agent" }    # change this 
+
+  environment {
+    SEMAPHORE_URL = "http://semaphore:3000"
+    PROJECT_ID = "1"        # change this
+    TEMPLATE_ID = "1"       # change this 
+  }
+
+  stages {
+
+    stage('Test Semaphore API') {
+      steps {
+        withCredentials([string(credentialsId: 'semaphore-api-token', variable: 'TOKEN')]) {
+          script {
+            def response = sh(
+              script: '''
+                curl -s -o /dev/null -w "%{http_code}" \
+                -H "Authorization: Bearer $TOKEN" \
+                http://semaphore:3000/api/project/1/tasks
+              ''',
+              returnStdout: true
+            ).trim()
+
+            echo "API Response Code: ${response}"
+
+            if (response != "200") {
+              error("Semaphore API test failed!")
+            }
+          }
+        }
+      }
+    }
+
+    stage('Trigger Deployment') {
+      steps {
+        withCredentials([string(credentialsId: 'semaphore-api-token', variable: 'TOKEN')]) {
+          script {
+            def deployResponse = sh(
+              script: '''
+                curl -s -o /dev/null -w "%{http_code}" \
+                -X POST \
+                -H "Authorization: Bearer $TOKEN" \
+                -H "Content-Type: application/json" \
+                -d '{"template_id":1}' \
+                http://semaphore:3000/api/project/1/tasks
+              ''',
+              returnStdout: true
+            ).trim()
+
+            echo "Deployment Trigger Response Code: ${deployResponse}"
+
+            if (deployResponse != "204" && deployResponse != "201") {
+              error("Deployment trigger failed!")
+            }
+          }
+        }
+      }
+    }
+  }
+}
