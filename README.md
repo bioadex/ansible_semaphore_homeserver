@@ -1,19 +1,34 @@
 # ansible_semaphore_homeserver
-jenkins-ansible-semaphore-cicd
+
+# jenkins-ansible-semaphore-cicd
 
 ```text
-jenkins-ansible-semaphore-cicd/
-│
-├── Jenkinsfile
+ansible-semaphore-homeserver/
 ├── README.md
-├── docs/
-│   ├── architecture.png
-│   └── setup-guide.md
-├── screenshots/
-│   ├── pipeline-success.png
-│   └── semaphore-run.png
-└── ansible/
-    └── playbooks/
+├── inventories/
+│   ├── dev.ini
+│   ├── prod.ini
+│   └── group_vars/
+│       ├── all.yml
+│       ├── dev.yml
+│       └── prod.yml
+├── playbooks/
+│   ├── site.yml
+│   ├── update_servers.yml
+│   ├── install_docker.yml
+│   └── users.yml
+├── roles/
+│   ├── common/
+│   │   ├── tasks/main.yml
+│   │   └── handlers/main.yml
+│   ├── docker/
+│   └── nginx/
+├── semaphore/
+│   └── templates.md
+├── jenkins/
+│   └── Jenkinsfile
+└── .gitignore
+
 ```
 
 
