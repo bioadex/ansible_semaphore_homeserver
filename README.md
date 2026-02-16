@@ -79,6 +79,10 @@ HTTP 201 Created
 <img width="1073" height="940" alt="image" src="https://github.com/user-attachments/assets/7e66c5bd-efa9-483a-bfda-3f4633745552" />
 <img width="918" height="395" alt="image" src="https://github.com/user-attachments/assets/368d8126-8083-4490-ad64-c1cd5aa32e46" />
 
+# Multiple Stage Production Pipeline 
+<img width="1885" height="723" alt="image" src="https://github.com/user-attachments/assets/a7697019-9a27-45b5-aade-a572634ff0ef" />
+
+
 
 
 
