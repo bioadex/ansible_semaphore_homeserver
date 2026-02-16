@@ -1,4 +1,5 @@
-# ansible_semaphore_homeserver
+This project demonstrates a real-world Ansible automation workflow using
+Semaphore UI, Jenkins, Docker, and Nginx Proxy Manager.
 
 # jenkins-ansible-semaphore-cicd
 
@@ -36,7 +37,7 @@ ansible-semaphore-homeserver/
 
 # Architecture 
 
-GitHub -> Jenkins -> Semaphore -> Ansible -> Target Host
+GitHub -> Jenkins -> Semaphore -> Ansible -> Linux Servers -> Target Host
 
 # Environment 
 
@@ -44,6 +45,15 @@ GitHub -> Jenkins -> Semaphore -> Ansible -> Target Host
 - Jenkins (Docker)
 - Ansible (Semaphore UI)
 - Docker Network
+
+# Technologies Used 
+
+- Ansible
+- Semaphore UI
+- Jenkins
+- Docker & Docker Compose
+- Nginx Proxy Manager
+- GitHub
 
 # Secure API Integration 
 Jenkins securely triggers Semaphore deployment using API token stored in Jenkins Credientials 
