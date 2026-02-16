@@ -1,5 +1,4 @@
-This project demonstrates a real-world Ansible automation workflow using
-Semaphore UI, Jenkins, Docker, and Nginx Proxy Manager.
+# This project demonstrates a real-world Ansible automation workflow using Semaphore UI, Jenkins, Docker, and Nginx Proxy Manager.
 
 # jenkins-ansible-semaphore-cicd
 
@@ -40,14 +39,12 @@ ansible-semaphore-homeserver/
 GitHub -> Jenkins -> Semaphore -> Ansible -> Linux Servers -> Target Host
 
 # Environment 
-
 - Ubuntu Server 24.04
 - Jenkins (Docker)
 - Ansible (Semaphore UI)
 - Docker Network
 
 # Technologies Used 
-
 - Ansible
 - Semaphore UI
 - Jenkins
