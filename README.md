@@ -32,7 +32,7 @@ ansible-semaphore-homeserver/
 ```
 
 
-# Jenkins -> Semaphore CI/CD Integration (HomeServer)
+# Jenkins -> Semaphore CI/CD Integration 
 
 # Architecture 
 
