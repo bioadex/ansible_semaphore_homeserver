@@ -75,6 +75,7 @@ HTTP 201 Created
 
 <img width="1366" height="816" alt="image" src="https://github.com/user-attachments/assets/0f7b9018-8686-44e2-8398-b740a056cdac" />
 <img width="1362" height="698" alt="image" src="https://github.com/user-attachments/assets/c33eda7f-87a9-4539-9740-e71a5cdb2fed" />
+<img width="1328" height="939" alt="image" src="https://github.com/user-attachments/assets/f51c38b6-99eb-4bd1-b069-44597e1cf4bf" />
 <img width="1073" height="940" alt="image" src="https://github.com/user-attachments/assets/7e66c5bd-efa9-483a-bfda-3f4633745552" />
 <img width="918" height="395" alt="image" src="https://github.com/user-attachments/assets/368d8126-8083-4490-ad64-c1cd5aa32e46" />
 
